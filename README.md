@@ -1,115 +1,78 @@
-<h1 align="center">Hi 👋, I'm Nakshatra Joshi</h1>
-<h3 align="center">Backend & AI infrastructure engineer · final-year CSE @ RGIPT</h3>
+## Nakshatra Joshi
 
-<p align="center">
-  <a href="https://nakshjoshi.in"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio"/></a>
-  <a href="https://www.linkedin.com/in/nakshjoshi/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="mailto:connect.nakshjoshi@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-</p>
+Backend and AI infrastructure engineer. Final-year B.Tech. in Computer Science & Design Engineering at RGIPT.
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=nakshjoshi&label=Profile%20views&color=0e75b6&style=flat" alt="profile views"/>
-</p>
+I work on the layer underneath LLM products — retrieval pipelines, agent tooling, job queues, auth, and the deployment plumbing that keeps them running in production.
+
+**Available from January 2027** for a 6-month internship or full-time role.
+
+[Portfolio](https://nakshjoshi.in) · [LinkedIn](https://www.linkedin.com/in/nakshjoshi/) · connect.nakshjoshi@gmail.com
 
 ---
 
-## 💫 About Me
+### Experience
 
-- 🔭 Building **Sentinel** — semantic conflict detection for parallel AI coding agents, and **Meter** — an AI gateway with per-team token budgets and cost control
-- 💼 Software Engineer Intern at **CargoFL** (May – Aug 2026) · AI Developer Intern at **Prodigal AI** (Jun – Aug 2025)
-- 🧱 I work on the layer *under* LLM products — retrieval pipelines, agent tooling, job queues, and deployment plumbing
-- 🎯 **Available from Jan 2027** for a 6-month internship or full-time role
-- 💬 Ask me about **RAG, LLM tool calling, Fastify/FastAPI backends, or Docker job isolation**
-- ⚡ Fun fact: I'd rather fix the queue than tune the prompt
+**Software Engineer Intern** — CargoFL (Innoctive Technologies) · May – Aug 2026 · Pune
 
----
+Re-platformed a chat-based freight-procurement agent off a Fastify agent marketplace — where per-agent tools were isolated on Cloudflare Workers + D1 — first into a standalone Workers backend, then into an independent Fastify + React service on PostgreSQL/Drizzle. Implemented 10 tools covering the end-to-end RFQ lifecycle across 7 carriers, with background workers handling per-client configurable sweep intervals for stale-RFQ reminders and failed-job retries, and write-only BYOK credentials encrypted at rest. Validated with 5 MCP-driven Playwright E2E flows and 50 test RFQs; passed client UAT on 30 RFQs.
 
-## 🛠️ Tech Stack
+Also built the backend of an AI proof-of-delivery extraction platform: file-type routing into a Redis queue backed by a Postgres job table, pulling documents from S3 on demand for an OCR + vision-LLM pass. Extended line-item-to-total reconciliation to every file-type path — **~82% of production PODs auto-reconcile**, the rest route to manual review. **7,000+ PODs processed in production.** Implemented RBAC across 5 roles for single-tenant deployments serving 3 clients with client-hosted databases for data residency.
 
-**Languages**
+**AI Developer Intern** — Prodigal AI · Jun – Aug 2025 · Remote
 
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
-
-**Backend & Web**
-
-![Fastify](https://img.shields.io/badge/Fastify-000000?style=for-the-badge&logo=fastify&logoColor=white)
-![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
-![Hono](https://img.shields.io/badge/Hono-E36002?style=for-the-badge&logo=hono&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![Bun](https://img.shields.io/badge/Bun-000000?style=for-the-badge&logo=bun&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-
-**AI / LLM**
-
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
-![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6B6B?style=for-the-badge&logo=databricks&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
-![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)
-![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white)
-![Airflow](https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white)
-
-**Data & Infra**
-
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
-![Drizzle](https://img.shields.io/badge/Drizzle-C5F74F?style=for-the-badge&logo=drizzle&logoColor=black)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
-![Cloudflare](https://img.shields.io/badge/Cloudflare_Workers-F38020?style=for-the-badge&logo=cloudflareworkers&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+Built FastAPI backends for RAG-based content-generation pipelines, orchestrated as Airflow DAGs with human-in-the-loop steps that pause for reviewer approval and persist conversation history in a separate store, so runs resume rather than restart. Used the MLflow Model Registry (DagsHub) to load versioned models at runtime, enabling model swaps without redeploys.
 
 ---
 
-## 🚀 Projects
+### Projects
 
-### [Swiftly](https://github.com/nakshjoshi/swiftly) · [live](https://swiftly.nakshjoshi.in)
-`Next.js` `Bun` `Express` `Prisma` `PostgreSQL` `Gemini` `Docker`
+#### [Swiftly](https://github.com/nakshjoshi/swiftly) — resume automation platform · [live](https://swiftly.nakshjoshi.in)
+`Next.js` `TypeScript` `Bun` `Express` `Prisma` `PostgreSQL` `Gemini` `Docker`
 
-A resume-automation platform with a browser extension (WXT MV3) for job-application autofill. Custom auth with no third-party provider: JWT + refresh-token rotation, Google OAuth2, WebAuthn passkeys. An LLM parsing pipeline turns PDF/DOCX/LaTeX resumes into schema-validated JSON, and a two-stage autofill maps extracted DOM field metadata to profile values with event-safe injection for React, Vue and Svelte forms. LaTeX compilation runs isolated in a resource-limited Docker service (1 GB / 1 CPU, 60 s timeout). **100+ resumes processed.**
+A Next.js dashboard, Bun/Express REST API, and WXT MV3 browser extension for job-application autofill. Auth is custom, with no third-party provider: JWT with refresh-token rotation, Google OAuth2, and WebAuthn passkeys.
 
-### [Bilingual AI Chatbot](https://github.com/nakshjoshi/MySchemeMultiLinguaBot)
-`Python` `Streamlit` `ChromaDB` `Gemini`
+An LLM parsing pipeline turns PDF/DOCX/LaTeX resumes into schema-validated JSON in normalized PostgreSQL via Prisma. A two-stage autofill maps extracted DOM field metadata to profile values with event-safe injection for React, Vue and Svelte forms. LaTeX compilation is isolated in a resource-limited Docker service (1 GB / 1 CPU, 60 s timeout, per-job temp dirs), built in GitHub Actions CI/CD behind type-check and lint gates, pushing SHA-tagged images to Docker Hub and deploying the pinned SHA over SSH to AWS EC2 as health-checked, non-root containers. **100+ resumes processed** from testing to production.
 
-A Hindi↔English CRAG retrieval system over **3,300+ Indian government schemes**, hitting **85%+ answer accuracy** on an LLM-as-judge eval. Metadata-enriched hybrid chunking with Top-2 + sibling retrieval cuts token overhead, and intent detection routes between eligibility, benefits and how-to-apply questions.
+#### [Bilingual AI Chatbot](https://github.com/nakshjoshi/MySchemeMultiLinguaBot) — CRAG over government schemes
+`Python` `Streamlit` `ChromaDB` `SentenceTransformers` `Gemini 2.0 Flash`
 
-### [Voice AI Agent](https://github.com/nakshjoshi/stt-llm-tts)
-`React` `Node.js` `Express` `Groq` `OpenAI`
+A Hindi↔English CRAG retrieval system over **3,300+ Indian government schemes**, reaching **85%+ answer accuracy** on an LLM-as-judge evaluation across a generated question set. Metadata-enriched hybrid chunking (30K+ chunks) with Top-2 + sibling retrieval cuts token overhead, and intent detection routes queries between eligibility, benefits, and how-to-apply paths.
 
-A mic → STT → LLM → TTS pipeline behind an Express API, provider-swappable between Groq and OpenAI via a single env var. Browser-speech fallback, rate-limit-aware sentence trimming, typed 429/502/503 errors.
+#### [Voice AI Agent](https://github.com/nakshjoshi/stt-llm-tts) — real-time speech pipeline
+`React` `Node.js` `Express` `Groq` `OpenAI` `Whisper` `Orpheus TTS`
 
-### [detex-ast](https://github.com/nakshjoshi/detex-ast)
-`TypeScript`
+A mic → STT → LLM → TTS agent (Whisper-large-v3-turbo, GPT-OSS-20B, Orpheus) behind an Express API, provider-swappable between Groq and OpenAI via a single environment variable. Browser-speech fallback, rate-limit-aware sentence trimming, and typed 429/502/503 error handling.
 
-LaTeX → clean plain text via real AST traversal rather than regex. Python has had `pylatexenc` for years; the JS ecosystem had only regex-based strippers that break on nested braces. This fills that gap.
+#### GoBrics — hackathon platform
+`React` `Node.js` `Express` `Turborepo` `PostgreSQL` `Prisma` `Redis` `AWS` `Yandex Cloud`
 
----
-
-## 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=nakshjoshi&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="stats" height="170"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nakshjoshi&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="top languages" height="170"/>
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=nakshjoshi&theme=tokyonight&hide_border=true" alt="streak"/>
-</p>
+Team build serving **10K+ users across India and Russia** at **1K+ concurrent**. Built upload APIs with S3 integration for PDF submissions and a Redis-queued email service respecting Resend rate limits. Co-designed Route 53 geolocation routing to localise Russian data on Yandex Cloud, sharing one S3-SDK codebase with AWS.
 
 ---
 
-## 🏆 Also
+### Currently building
 
-- **Training & Placement Student Coordinator** at RGIPT since 2024
-- **KodeKurrent Hackathon 2025 finalist** — top of 250+ teams, converted to a paid internship at Prodigal AI
+**Sentinel** — semantic conflict detection for parallel AI coding agents. Git merges line by line, so when one agent renames `createOrder` and another adds a call to it in a different file, the merge is clean and the code is broken. Sentinel watches every agent's edits as they happen and resolves which changes actually interact, across three tiers of increasing cost and certainty.
 
-<p align="center"><i>Let's build something. Reach out on <a href="https://www.linkedin.com/in/nakshjoshi/">LinkedIn</a>.</i></p>
+**Meter** — an AI gateway with quota and cost control: per-team token budgets enforced across distributed instances, exact cost per request, caching, multi-provider failover, and usage billing on a double-entry ledger.
+
+---
+
+### Technical skills
+
+**Languages** — TypeScript/JavaScript, Python, Java, SQL, Bash
+
+**Backend & web** — Node.js, Fastify, Express, Hono, FastAPI, Bun, React, Next.js, REST APIs, OAuth2/WebAuthn
+
+**AI/LLM** — RAG, LLM tool calling, MCP, ChromaDB, LangChain, OCR + vision LLMs, MLflow, Airflow, Whisper/TTS
+
+**Data & infra** — PostgreSQL, Redis, Prisma/Drizzle, Docker, GitHub Actions, AWS (EC2/S3), Cloudflare Workers/D1, Linux
+
+---
+
+### Education
+
+**Rajiv Gandhi Institute of Petroleum Technology** — B.Tech. in Computer Science & Design Engineering · Aug 2023 – May 2027 · CPI 7.43
+
+Training and Placement Student Coordinator (2024 – present), coordinating placements and internships at RGIPT.
+KodeKurrent Hackathon 2025 — finalist from 250+ teams; converted to a paid internship at Prodigal AI.
